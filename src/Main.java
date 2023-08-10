@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // 1
+        // 12
         System.out.println("Mein Taschenrechner: ");
 
         // Einlesen von zwei Zahlen
