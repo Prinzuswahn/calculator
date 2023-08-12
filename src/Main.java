@@ -47,7 +47,6 @@ public class Main {
             default:
                 System.out.println("Ungueltige Angabe!");
                 break;
-
         }
 
         System.out.println("Möchtest Du weiter rechnen? y/n");
