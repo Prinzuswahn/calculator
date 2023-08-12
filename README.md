@@ -1,3 +1,1 @@
 # simple calculator
-
-coming soon
