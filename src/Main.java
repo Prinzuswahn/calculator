@@ -59,11 +59,11 @@ public class Main {
             Scanner vierte = new Scanner(System.in);
             String operator1  = vierte.nextLine();
 
-            System.out.println("Die erste Zahl bitte:\t ");
+            System.out.println("Die dritte Zahl bitte:\t ");
             Scanner dritteZahl = new Scanner(System.in);
             int zahl3 = dritteZahl.nextInt();
 
-            System.out.println("Die zweite Zahl bitte:\t ");
+            System.out.println("Die vierte Zahl bitte:\t ");
             Scanner vierteZahl = new Scanner(System.in);
             int zahl4 = vierteZahl.nextInt();
 
@@ -89,7 +89,6 @@ public class Main {
                     break;
 
             }
-
 
         } else {
             System.out.println("Eingabe beendet");
