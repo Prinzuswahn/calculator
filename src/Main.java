@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        Scanner username = new Scanner(System.in);
+        System.out.println("Gib dein Name ein: ");
+        System.out.println(getGreeting(username.nextLine()));
+
         // Begrüßung11
         System.out.println("Mein Taschenrechner: ");
 
@@ -18,7 +22,7 @@ public class Main {
 
         System.out.println("Welche Operation soll durchgeführt werden? +, -, *, /\t ");
         Scanner dritte = new Scanner(System.in);
-        String operator  = dritte.nextLine();
+        String operator = dritte.nextLine();
 
         // Ergebnis der zwei Zahlen in var ergebnis
 
@@ -50,14 +54,14 @@ public class Main {
         }
 
         System.out.println("Möchtest Du weiter rechnen? y/n");
-            Scanner decision = new Scanner(System.in);
-            String input = decision.next();
+        Scanner decision = new Scanner(System.in);
+        String input = decision.next();
 
-        if ( "y".equals (input)) {
+        if ("y".equals(input)) {
             System.out.println("Gib eine weitere Operation ein: +, -, *, /\t ");
 
             Scanner vierte = new Scanner(System.in);
-            String operator1  = vierte.nextLine();
+            String operator1 = vierte.nextLine();
 
             System.out.println("Die dritte Zahl bitte:\t ");
             Scanner dritteZahl = new Scanner(System.in);
@@ -93,9 +97,14 @@ public class Main {
         } else {
             System.out.println("Eingabe beendet");
         }
+    }
 
+    /**
+     * get return greeting string by username
+     */
+    private static String getGreeting(String username) {
 
-
+        return ("Guten Tag " + username + "!");
     }
 
 }
