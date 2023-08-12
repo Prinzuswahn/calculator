@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // 122345
         System.out.println("Mein Taschenrechner: ");
 
         // Einlesen von zwei Zahlen
@@ -47,7 +46,56 @@ public class Main {
             default:
                 System.out.println("Ungueltige Angabe!");
                 break;
+
         }
+
+        System.out.println("Möchtest Du weiter rechnen? y/n");
+            Scanner decision = new Scanner(System.in);
+            String input = decision.next();
+
+        if ( "y".equals (input)) {
+            System.out.println("Gib eine weitere Operation ein: +, -, *, /\t ");
+
+            Scanner vierte = new Scanner(System.in);
+            String operator1  = vierte.nextLine();
+
+            System.out.println("Die erste Zahl bitte:\t ");
+            Scanner dritteZahl = new Scanner(System.in);
+            int zahl3 = dritteZahl.nextInt();
+
+            System.out.println("Die zweite Zahl bitte:\t ");
+            Scanner vierteZahl = new Scanner(System.in);
+            int zahl4 = vierteZahl.nextInt();
+
+            switch (operator1) {
+                case "+":
+                    System.out.println("Das Ergebnis: ");
+                    System.out.println(zahl1 + zahl2 + zahl3 + zahl4);
+                    break;
+                case "-":
+                    System.out.println("Das Ergebnis: ");
+                    System.out.println(zahl1 - zahl2 - zahl3 - zahl4);
+                    break;
+                case "*":
+                    System.out.println("Das Ergebnis: ");
+                    System.out.println(zahl1 * zahl2 * zahl3 * zahl4);
+                    break;
+                case "/":
+                    System.out.println("Das Ergebnis: ");
+                    System.out.println(zahl1 / zahl2 / zahl3 / zahl4);
+                    break;
+                default:
+                    System.out.println("Ungueltige Angabe!");
+                    break;
+
+            }
+
+
+        } else {
+            System.out.println("Eingabe beendet");
+        }
+
+
 
     }
 
