@@ -50,12 +50,13 @@ public class Main {
 
         }
 
+        while (true) {
 
         System.out.println("Möchtest Du weiter rechnen? y/n");
         Scanner decision = new Scanner(System.in);
         String input = decision.next();
 
-    while (true) {
+
 
         if ("y".equals(input)) {
 
@@ -91,11 +92,12 @@ public class Main {
 
         }
 
-    } else {
+        } else {
 
-        System.out.println("Ungueltige Angabe!");
+        System.out.println("Programmabbruch!");
+        break;
 
-         }
+                }
             }
         }
     }
