@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // Begrüßung1
+        // Begrüßung
         System.out.println("Willkommen bei meinem Taschenrechner: \n");
 
         // Einlesen von zwei Zahlen
