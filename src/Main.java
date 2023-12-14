@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Begrüßung im Programm
-        System.out.println("Willkommen bei meinem Taschenrechner: \t");
+        System.out.println("Willkommen bei meinem Taschenrechner \t");
 
         // Einlesen von zwei Zahlen
 
